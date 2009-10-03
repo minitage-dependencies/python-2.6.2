@@ -8,7 +8,7 @@ def getpythonenv(options,buildout):
         os.chdir(options['compile-directory'])
         os.system('autoconf -v -f')
         os.chdir(cwd)
-#    os.environ['OPT'] = os.environ['CFLAGS']
+    os.environ['OPT'] = os.environ['CFLAGS']
 
 #   crypt=''
 #   if os.uname()[0] != 'Darwin':
